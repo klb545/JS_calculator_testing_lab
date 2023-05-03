@@ -228,6 +228,12 @@ describe('even', () => {
     expect(actual).toBe(expected);
   });
 
+  test('can perform even function to return correct boolean - returning true for zero', () => {
+    expected = true;
+    actual = even(0);
+    expect(actual).toBe(expected);
+  });
+
 });
 
 describe('odd', () => {
@@ -253,6 +259,12 @@ describe('odd', () => {
   test('can perform odd function to return correct boolean - returning true for negative odd number', () => {
     expected = true;
     actual = odd(-7);
+    expect(actual).toBe(expected);
+  });
+
+  test('can perform odd function to return correct boolean - returning false for zero', () => {
+    expected = false;
+    actual = odd(0);
     expect(actual).toBe(expected);
   });
 
