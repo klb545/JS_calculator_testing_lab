@@ -15,10 +15,7 @@ const modulus = (a, b) => {
     if(a < 0 && b < 0){
         return a % b;
     }
-    if(a < 0){
-        return b + (a % b);
-    }
-    if(b < 0){
+    if(a < 0 || b < 0){
         return b + (a % b);
     }
     return a % b;
