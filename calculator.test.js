@@ -246,6 +246,18 @@ describe('even', () => {
     expect(actual).toBe(expected);
   });
 
+  test('returns undefined for non-integer positive', () => {
+    expected = undefined;
+    actual = even(1.5);
+    expect(actual).toBe(expected);
+  });
+
+  test('returns undefined for non-integer negative', () => {
+    expected = undefined;
+    actual = even(-1.5);
+    expect(actual).toBe(expected);
+  });
+
 });
 
 describe('odd', () => {
@@ -277,6 +289,18 @@ describe('odd', () => {
   test('can perform odd function to return correct boolean - returning false for zero', () => {
     expected = false;
     actual = odd(0);
+    expect(actual).toBe(expected);
+  });
+
+  test('returns undefined for non-integer positive', () => {
+    expected = undefined;
+    actual = odd(1.5);
+    expect(actual).toBe(expected);
+  });
+
+  test('returns undefined for non-integer negative', () => {
+    expected = undefined;
+    actual = odd(-1.5);
     expect(actual).toBe(expected);
   });
 
