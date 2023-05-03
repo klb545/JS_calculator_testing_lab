@@ -1,6 +1,8 @@
-const sum = function(a, b){
-    return a + b;
-};
+// const sum = function(a, b){
+//     return a + b;
+// };
+
+const sum = (a, b) => a + b;
 
 const subtract = (a, b) => a - b;
 
@@ -10,9 +12,9 @@ const divide = (a, b) => (a / b) ** 2 === Infinity ? undefined : a / b;
 
 const modulus = (a, b) => a % b === -0 ? 0 : a * b < 0 ? a % b + b : a % b;
 
-const even = (a) => a % 2 === 0 ? true : false;
+const even = (a) => a % 1 !== 0 ? undefined : a % 2 === 0 ? true : false;
 
-const odd = (a) => a % 2 === 0 ? false : true;
+const odd = (a) => a % 1 !== 0 ? undefined : a % 2 === 0 ? false : true;
 
 module.exports = { 
     sum, 
