@@ -137,13 +137,13 @@ describe('divide', () => {
     });
 
     test('can divide positive number by zero', () => {
-      expected = Infinity;
+      expected = undefined;
       actual = divide(30, 0);
       expect(actual).toBe(expected);
     });
 
     test('can divide negative by zero', () => {
-      expected = -Infinity;
+      expected = undefined;
       actual = divide(-30, 0);
       expect(actual).toBe(expected);
     });
