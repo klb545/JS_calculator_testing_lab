@@ -12,10 +12,7 @@ const modulus = (a, b) => {
     if (a % b === -0) {
         return 0;
     }
-    if(a * b < 0){
-        return b + (a % b);
-    }
-    return a % b;
+    return a * b < 0 ? b + (a % b) : a % b;
 };
 
 const even = function(a){
