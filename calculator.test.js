@@ -155,50 +155,50 @@ describe('modulus', () => {
   test('can perform modulus function on small numbers - remainder 0', () => {
     expected = 0;
     actual = modulus(10, 2);
-    expect(actual).toBe(expected)
-  })
+    expect(actual).toBe(expected);
+  });
 
   test('can perform modulus function on small numbers - remainder 1', () => {
     expected = 1;
     actual = modulus(11, 2);
     expect(actual).toBe(expected)
-  })
+  });
 
   test('can perform modulus function on big numbers - remainder 0', () => {
     expected = 0;
     actual = modulus(100000, 5000);
-    expect(actual).toBe(expected)
-  })
+    expect(actual).toBe(expected);
+  });
 
   test('can perform modulus function on big numbers - remainder 3', () => {
     expected = 3;
     actual = modulus(100003, 5000);
-    expect(actual).toBe(expected)
-  })
+    expect(actual).toBe(expected);
+  });
 
   test('can perform modulus function on negative number - remainder 0', () => {
     expected = 0;
     actual = modulus(-300, 50);
     expect(actual).toBe(expected);
-  })
+  });
 
   test('can perform modulus function on negative number - remainder 49', () => {
     expected = 49;
     actual = modulus(-301, 50);
     expect(actual).toBe(expected);
-  })
+  });
 
   test('can perform modulus function with negative number on positive number - remainder 1', () => {
     expected = -49;
     actual = modulus(301, -50);
     expect(actual).toBe(expected);
-  })
+  });
 
   test('can perform modulus function with negative number on negative number - remainder 1', () => {
     expected = -1;
     actual = modulus(-301, -50);
     expect(actual).toBe(expected);
-  })
+  });
 
 });
 
