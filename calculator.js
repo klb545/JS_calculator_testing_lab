@@ -17,7 +17,7 @@ const odd = (a) => a % 2 === 0 ? false : true;
 module.exports = { 
     sum, 
     subtract, 
-    multiply, 
+    multiply,
     divide, 
     modulus, 
     even, 

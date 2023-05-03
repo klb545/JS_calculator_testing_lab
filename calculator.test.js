@@ -188,9 +188,21 @@ describe('modulus', () => {
     expect(actual).toBe(expected);
   });
 
+  test('can perform modulus function with negative number on positive number - remainder 0', () => {
+    expected = 0;
+    actual = modulus(300, -50);
+    expect(actual).toBe(expected);
+  });
+
   test('can perform modulus function with negative number on positive number - remainder 1', () => {
     expected = -49;
     actual = modulus(301, -50);
+    expect(actual).toBe(expected);
+  });
+
+  test('can perform modulus function with negative number on negative number - remainder 0', () => {
+    expected = 0;
+    actual = modulus(-300, -50);
     expect(actual).toBe(expected);
   });
 
